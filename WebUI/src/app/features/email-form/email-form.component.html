@@ -1,0 +1,28 @@
+<form class="container" [formGroup]="emailForm" (submit)="sendEmail($event)">
+  <div class="form-group col-12 col-md-8 col-lg-6">
+    <label for="email" class="marginTop required">Email address</label>
+    <input [class.is-invalid]="emailForm.controls.fromEmail.invalid && emailForm.controls.fromEmail.touched"
+    type="email" class="form-control" name="email" placeholder="name@example.com" formControlName="fromEmail" ngModel email>
+  </div>
+  <div class="form-group col-12 col-md-8 col-lg-6">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="name" formControlName="name">
+  </div>
+  <div class="form-group col-12 col-md-8 col-lg-6">
+      <label for="number">Phone Number</label>
+      <input type="tel" class="form-control" id="number" placeholder="number" formControlName="phoneNumber">
+  </div>
+  <div class="form-group col-12 col-lg-10">
+    <label class="required" for="subject">Message</label>
+    <textarea [class.is-invalid]="emailForm.controls.body.invalid && emailForm.controls.body.touched" class="form-control"
+    rows="3" placeholder="message" formControlName="body"></textarea>
+  </div>
+  <button type="submit" class="btn" *ngIf="!submitted">Submit</button>
+</form>
+<ng-container *ngIf="response">
+  <div class="container">
+    <p>
+      {{response}}
+    </p>
+  </div>
+</ng-container>

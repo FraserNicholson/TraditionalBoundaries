@@ -1,0 +1,68 @@
+img {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    @media (max-width: 770px){
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width: 395px) {
+        width: 240px;
+        height: 160px;
+    }
+    @media (max-width: 325px) {
+        width: 210px;
+        height: 140px;
+    }    
+}
+
+p {
+    @media (max-width: 770px){
+        display: block;
+        text-align: center;
+    }
+}
+
+.galleryImage:hover {
+    opacity: 0.7;
+}
+
+.modalImage {
+    width: 750px;
+    height: 500px;
+    cursor: auto;
+    @media (max-width: 992px) {
+        width: 480px;
+        height: 360px;
+    }
+    @media (max-width: 576px) {
+        width: 360px;
+        height: 240px;
+    }
+    @media (max-width: 410px) {
+        width: 300px;
+        height: 200px;
+    }
+    @media (max-width: 350px) {
+        width: 270px;
+        height: 180px;
+    }
+    @media (max-width: 325px) {
+        width: 240px;
+        height: 160px;
+    }
+}
+
+.float-image {
+    @media (max-width: 770px){
+        display: none;
+    }
+}
+
+.block-image {
+    display: none;
+    @media (max-width: 770px){
+        display: block;
+    }
+}

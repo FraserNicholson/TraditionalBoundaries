@@ -1,0 +1,59 @@
+.carouselImage {
+    width: 100%;
+    height: 650px;
+    margin: auto;
+    object-fit: cover;
+
+    @media (max-width: 992px) {
+        height: 450px;
+    }
+
+    @media (max-width: 600px) {
+        height: 300px;
+    }
+
+    @media (max-width: 400px) {
+        height: 200px;
+    }
+}
+
+.modalImage {
+    width: 750px;
+    height: 500px;
+    cursor: auto;
+    @media (max-width: 992px) {
+        width: 480px;
+        height: 360px;
+    }
+    @media (max-width: 576px) {
+        width: 360px;
+        height: 240px;
+    }
+    @media (max-width: 410px) {
+        width: 300px;
+        height: 200px;
+    }
+    @media (max-width: 350px) {
+        width: 270px;
+        height: 180px;
+    }
+    @media (max-width: 325px) {
+        width: 240px;
+        height: 160px;
+    }
+}
+
+.leftCtrl {
+    margin-left: 30%;
+}
+
+.rightCtrl {
+    margin-right: 30%;
+}
+
+.captionBox {
+    width: 50%;
+    background-color: rgba(black, $alpha: 0.5);
+    margin-left: 25%;
+    border-radius: 10px;
+}

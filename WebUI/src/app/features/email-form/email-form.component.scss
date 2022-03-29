@@ -1,0 +1,16 @@
+.marginTop {
+    margin-top: 20px;
+}
+
+button {
+    margin-left: 13px;
+}
+
+p {
+    margin: 20px 0 0 13px;
+}
+
+.required:after {
+    content:" *";
+    color: red;
+}
