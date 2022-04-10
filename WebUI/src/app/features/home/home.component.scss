@@ -40,7 +40,7 @@
             transform: translate(-50%, -50%);  
         }
     }
-    .image-container:hover {
+    .image-container:hover, .image-container:active {
         img {
             opacity: 0.7;
             cursor: pointer;
