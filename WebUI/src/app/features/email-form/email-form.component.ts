@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
@@ -56,9 +56,9 @@ export class EmailFormComponent {
       .then((result: EmailJSResponseStatus) => {
         this.emailForm.reset();
         this.submitted = true;
-        this.response = 'Email succesfully sent';        
+        this.response = 'Email successfully sent';        
         }, (error) => {
-        this.response = 'An unexpected error has occured';
+        this.response = 'An unexpected error has occurred';
         });
     }
 
