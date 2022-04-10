@@ -21,7 +21,7 @@ export const galleryImages: image[][] = [
 
     [{src: folder +  'patio8.jpg',
     title: 'Patio',
-    description: 'I\'ve been to Mont St Michel, it was lovely. I would highly recommend going',
+    description: 'An example of a patio',
     active: true},
     {src: folder + 'patio-unfinished1.jpg'},
     {src: folder + 'patio-unfinished.jpg'},
@@ -29,7 +29,7 @@ export const galleryImages: image[][] = [
 
     [{src: folder + 'blockley-finished10.jpg',
     title: 'Dry stone wall',
-    description: 'These are the northern lights',
+    description: 'An example of a dry stone wall',
     active: true},
     {src: folder + 'blockley-started1.jpg'},
     {src: folder + 'blockley-unfinished1.jpg'},
@@ -44,7 +44,7 @@ export const galleryImages: image[][] = [
 
     [{src: folder + 'pt7-large.jpg',
     title: 'Patio',
-    description: 'These are the northern lights',
+    description: 'An example of a patio',
     active: true},
     {src: folder + 'jm-patio-unfinished1.jpg'},
     {src: folder + 'pt1-large.jpg'}]
