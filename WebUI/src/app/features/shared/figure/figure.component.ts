@@ -25,7 +25,9 @@ export class FigureComponent {
     }
 
     this.modalImages = this.imagesArray[index]
-    this.modalTitle = image.title;
+    if (image.title) {
+      this.modalTitle = image.title;
+    }
   }
 
   clearModal() {
